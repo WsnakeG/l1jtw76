@@ -40,7 +40,7 @@ public class RingsExpansionGem extends ItemExecutor {
 		if ((pc.getRingsExpansion() & 1) != 1) { // 左邊戒指
 			count += 1;
 		}
-//
+
 		if ((pc.getRingsExpansion() & 2) != 2) { // 右邊戒指
 			count += 2;
 		}
@@ -61,6 +61,7 @@ public class RingsExpansionGem extends ItemExecutor {
 			pc.setRingsExpansion((byte) Math.min(pc.getRingsExpansion() + 1, 3));
 			pc.sendPackets(new S_SystemMessage("您已經成功擴充 - [左邊戒指欄位]。"));
 			final S_SkillSound sound = new S_SkillSound(pc.getId(), 12003);
+			pc.getQuest().set_step(58003, 1);
 			pc.sendPacketsX8(sound);
 
 		} else {
@@ -72,6 +73,7 @@ public class RingsExpansionGem extends ItemExecutor {
 			pc.setRingsExpansion((byte) Math.min(pc.getRingsExpansion() + 2, 3));
 			pc.sendPackets(new S_SystemMessage("您已經成功擴充 - [右邊戒指欄位]。"));
 			final S_SkillSound sound = new S_SkillSound(pc.getId(), 12003);
+			pc.getQuest().set_step(58002, 1);
 			pc.sendPacketsX8(sound);
 		}
 

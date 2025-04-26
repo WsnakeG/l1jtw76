@@ -1034,7 +1034,7 @@ public class C_ItemUSe extends ClientBasePacket {
 		} else {
 			equipeSpace = pcInventory.getTypeEquipped(2, type) <= 0;
 		}
-	
+		
 		// 各部位可使用裝備數判斷
 		if (type == 9) { // 戒指
 			equipeSpace = pcInventory.getTypeEquipped(2, 9) <= 3;
@@ -1141,15 +1141,17 @@ public class C_ItemUSe extends ClientBasePacket {
 				pc.startHpRegeneration();
 				pc.startMpRegeneration();
 			}
+
 			pcInventory.setEquipped(armor, true);
+
 			// 防具脱除
-			} else if (armor.isEquipped()) { // 所选防具穿戴在身上
+		} else if (armor.isEquipped()) { // 所选防具穿戴在身上
 			if (armor.getItem().getBless() == 2) { // 呪われていた場合
 				// 150 \f1你无法这样做。这个物品已经被诅咒了。
 				pc.sendPackets(new S_ServerMessage(150));
 				return;
-			}			/*穿斗膨脫盔甲內衣
-				else {
+
+			} else {
 				if ((type == 3) && (pcInventory.getTypeEquipped(2, 2) >= 1)) { // 穿着盔甲时不能脱下内衣
 					// 127 \f1你不能夠脫掉那個。
 					pc.sendPackets(new S_ServerMessage(127));
@@ -1162,7 +1164,7 @@ public class C_ItemUSe extends ClientBasePacket {
 				}
 				
 				pcInventory.setEquipped(armor, false);
-			}   					穿斗膨脫盔甲內衣*/				 
+			}
 			/*
 			 * 1:helm, 头盔 2:armor, 盔甲 3:T,内衣 4:cloak,斗篷 5:glove,手套 6:boots, 靴子
 			 * 7:shield, 盾 8:amulet, 项链 9:ring, 戒指 10:belt, 腰带 11:ring2,

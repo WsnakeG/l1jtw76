@@ -90,6 +90,15 @@ public class S_EquipmentSlot extends ServerBasePacket {
 					case 16:
 						index = 5;
 						break;
+					case 17:
+						index = 17;
+						break;
+					case 18:
+						index = 18;
+						break;
+					case 19:
+						index = 19;
+						break;
 					default:
 						index = item.getItem().getType();
 						break;
@@ -97,8 +106,9 @@ public class S_EquipmentSlot extends ServerBasePacket {
 				}
 				writeD(item.getId());
 				writeD(index);
-			}
+			}			
 		}
+		
 	}
 
 	/**

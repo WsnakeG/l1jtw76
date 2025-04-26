@@ -159,7 +159,6 @@ public class ItemTable {
 		_useTypes.put("fishing_rod", new Integer(42));// 釣魚杆
 		// _useTypes.put("aid", new Integer(44)); // 副助道具
 		_useTypes.put("enc", new Integer(46)); // 飾品強化捲軸
-
 		_useTypes.put("up1", new Integer(44));// 7.0輔助
 		// _useTypes.put("aidr", new Integer(43));// 3.5TW輔助右
 		// _useTypes.put("aidm", new Integer(45));// 3.5TW輔助中
@@ -173,19 +172,14 @@ public class ItemTable {
 		_useTypes.put("soscs", new Integer(61));// 變形卷軸
 		// _useTypes.put("gaiter", new Integer(88));// 脛甲
 		_useTypes.put("gaiter", new Integer(70));// 脛甲
-
 		_useTypes.put("down1", new Integer(43));// 輔助格子 123
-		_useTypes.put("down3", new Integer(45));
-		_useTypes.put("down2", new Integer(47));
-		
+		_useTypes.put("down2", new Integer(45));
+		_useTypes.put("down3", new Integer(47));
 		_useTypes.put("up2", new Integer(49));
-		
-		// ADD
-//		_useTypes.put("armor1", new Integer(81)); // 重複
+
 		_useTypes.put("armor1", new Integer(81)); // 自訂不顯示欄位裝備
 		_useTypes.put("armor2", new Integer(82)); // 自訂不顯示欄位裝備
 		_useTypes.put("armor3", new Integer(83)); // 自訂不顯示欄位裝備
-//		_useTypes.put("armor5", new Integer(85)); // 重複
 		_useTypes.put("armor4", new Integer(84)); // 自訂不顯示欄位裝備
 		_useTypes.put("armor5", new Integer(85)); // 自訂不顯示欄位裝備
 		_useTypes.put("armor6", new Integer(86)); // 自訂不顯示欄位裝備
@@ -201,10 +195,6 @@ public class ItemTable {
 //		_useTypes.put("armor18", new Integer(98)); // 使用後會出現請選擇武器
 //		_useTypes.put("armor19", new Integer(99)); // 使用後會出現請選擇武器
 //		_useTypes.put("armor20", new Integer(100)); // 使用後會出現請選擇武器
-		
-		
-		
-		
 
 		_armorTypes.put("none", new Integer(0));
 		_armorTypes.put("helm", new Integer(1));// 頭盔
@@ -221,19 +211,17 @@ public class ItemTable {
 		_armorTypes.put("earring", new Integer(12));// 耳環
 		_armorTypes.put("guarder", new Integer(13));// 臂甲
 		_armorTypes.put("up1", new Integer(14)); // 副助道具
+		_armorTypes.put("up2", new Integer(23));
 		_armorTypes.put("gaiter", new Integer(16));// 脛甲
 		_armorTypes.put("down1", new Integer(17));
-		_armorTypes.put("down3", new Integer(18));
-		_armorTypes.put("down2", new Integer(19));
-		
-		_armorTypes.put("up2", new Integer(23));
+		_armorTypes.put("down2", new Integer(18));
+		_armorTypes.put("down3", new Integer(19));
+
 		
 		// ADD
-//		_armorTypes.put("armor1", new Integer(19)); // 重複
 		_armorTypes.put("armor1", new Integer(20)); // 自訂不顯示欄位裝備
 		_armorTypes.put("armor2", new Integer(21)); // 自訂不顯示欄位裝備
 		_armorTypes.put("armor3", new Integer(22)); // 自訂不顯示欄位裝備
-//		_armorTypes.put("armor5", new Integer(23)); // 重複
 		_armorTypes.put("armor4", new Integer(24)); // 自訂不顯示欄位裝備
 		_armorTypes.put("armor5", new Integer(25)); // 自訂不顯示欄位裝備
 		_armorTypes.put("armor6", new Integer(26)); // 自訂不顯示欄位裝備

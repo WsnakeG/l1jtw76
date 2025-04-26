@@ -322,7 +322,7 @@ public class L1Inventory extends L1Object {
 						pc.setProtector(true);
 						// 恭喜XXXXX獲得守護者靈魂成為人人稱羨的守護者
 						World.get().broadcastPacketToAll(
-								new S_BlueMessage(166, "\\f2恭喜[" + pc.getName() + "]獲得守護者靈魂成為人人稱羨的守護者"));
+								new S_BlueMessage(166, "\\f2[" + pc.getName() + "]獲得守護者靈魂的加護"));
 					}
 				}
 			}
@@ -1048,7 +1048,7 @@ public class L1Inventory extends L1Object {
 	 */
 	public boolean consumeEnchantItem(final int id, final int enchant, final long count) {
 		for (final L1ItemInstance item : _items) {
-			if (item.isEquipped()) { // 装備しているものは該当しない
+			if (item.isEquipped()) { // 不適用於裝備物品 装備しているものは該当しない
 				continue;
 			}
 			if ((item.getItemId() == id) && (item.getEnchantLevel() == enchant)) {
@@ -1087,7 +1087,7 @@ public class L1Inventory extends L1Object {
 		return count <= this.countItems(id);
 	}
 
-	// 特定のアイテムを全て必要な個数所持しているか確認（イベントとかで複数のアイテムを所持しているか確認するため）
+	// 檢查您是否擁有某種物品所需的全部數量（檢查您是否擁有某個活動的多件物品等） 特定のアイテムを全て必要な個数所持しているか確認（イベントとかで複数のアイテムを所持しているか確認するため）
 	public boolean checkItem(final int[] ids) {
 		final int len = ids.length;
 		final int[] counts = new int[len];

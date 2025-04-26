@@ -42,6 +42,7 @@ public class S_TimeLimitBuyList extends ServerBasePacket {
 	/**
 	 * 店品物表示。BUY押時送。
 	 */
+	@SuppressWarnings("unused")
 	public S_TimeLimitBuyList(int npcId, L1PcInstance pc) {
 		writeC(S_OPCODE_SHOWSHOPBUYLIST);
 		writeD(npcId);
