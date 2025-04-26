@@ -85,19 +85,22 @@ public class S_EquipmentSlot extends ServerBasePacket {
 						break;
 					case 14:
 						index = aid;
-						aid += 4;
+// up2 to 27			aid += 4;
 						break;
 					case 16:
 						index = 5;
 						break;
 					case 17:
-						index = 17;
+						index = 15;
 						break;
 					case 18:
-						index = 18;
+						index = 16;
 						break;
 					case 19:
-						index = 19;
+						index = 18;
+						break;
+					case 23:
+						index = 27;
 						break;
 					default:
 						index = item.getItem().getType();
